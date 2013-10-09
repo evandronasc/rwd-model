@@ -11,7 +11,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, ../sass/bases/_normalize.2.1.0.scss */
+/* line 11, ../sass/bases/_normalize.2.1.0.scss */
 article,
 aside,
 details,
@@ -30,7 +30,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, ../sass/bases/_normalize.2.1.0.scss */
+/* line 30, ../sass/bases/_normalize.2.1.0.scss */
 audio,
 canvas,
 video {
@@ -95,7 +95,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, ../sass/bases/_normalize.2.1.0.scss */
+/* line 94, ../sass/bases/_normalize.2.1.0.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -125,7 +125,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, ../sass/bases/_normalize.2.1.0.scss */
+/* line 125, ../sass/bases/_normalize.2.1.0.scss */
 b,
 strong {
   font-weight: bold;
@@ -161,7 +161,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, ../sass/bases/_normalize.2.1.0.scss */
+/* line 161, ../sass/bases/_normalize.2.1.0.scss */
 code,
 kbd,
 pre,
@@ -197,7 +197,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, ../sass/bases/_normalize.2.1.0.scss */
+/* line 197, ../sass/bases/_normalize.2.1.0.scss */
 sub,
 sup {
   font-size: 75%;
@@ -254,7 +254,7 @@ figure {
  */
 /* line 253, ../sass/bases/_normalize.2.1.0.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -276,7 +276,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, ../sass/bases/_normalize.2.1.0.scss */
+/* line 275, ../sass/bases/_normalize.2.1.0.scss */
 button,
 input,
 select,
@@ -293,7 +293,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, ../sass/bases/_normalize.2.1.0.scss */
+/* line 289, ../sass/bases/_normalize.2.1.0.scss */
 button,
 input {
   line-height: normal;
@@ -305,7 +305,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, ../sass/bases/_normalize.2.1.0.scss */
+/* line 301, ../sass/bases/_normalize.2.1.0.scss */
 button,
 select {
   text-transform: none;
@@ -318,7 +318,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, ../sass/bases/_normalize.2.1.0.scss */
+/* line 314, ../sass/bases/_normalize.2.1.0.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -332,7 +332,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 327, ../sass/bases/_normalize.2.1.0.scss */
+/* line 326, ../sass/bases/_normalize.2.1.0.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -342,7 +342,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, ../sass/bases/_normalize.2.1.0.scss */
+/* line 336, ../sass/bases/_normalize.2.1.0.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -370,7 +370,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, ../sass/bases/_normalize.2.1.0.scss */
+/* line 360, ../sass/bases/_normalize.2.1.0.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -379,7 +379,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, ../sass/bases/_normalize.2.1.0.scss */
+/* line 369, ../sass/bases/_normalize.2.1.0.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -458,58 +458,60 @@ h1 {
   font-size: 2.25em;
   line-height: 1.11111em;
   margin: 0 0 0.66667em 0;
+  color: #0071bc;
+  font-weight: 700;
 }
 
-/* line 19, ../sass/bases/_typography.scss */
+/* line 21, ../sass/bases/_typography.scss */
 h2 {
   font-size: 1.875em;
   line-height: 1.33333em;
   margin: 0.8em 0 0.53333em 0;
 }
 
-/* line 25, ../sass/bases/_typography.scss */
+/* line 27, ../sass/bases/_typography.scss */
 h3 {
   font-size: 1.375em;
   line-height: 1.45455em;
   margin: 1.09091em 0 0.72727em 0;
 }
 
-/* line 31, ../sass/bases/_typography.scss */
+/* line 33, ../sass/bases/_typography.scss */
 h4 {
   font-size: 1.25em;
   line-height: 1.2em;
   margin: 0 0 0.8em 0;
 }
 
-/* line 37, ../sass/bases/_typography.scss */
+/* line 39, ../sass/bases/_typography.scss */
 h5 {
   font-size: 1.125em;
   line-height: 1.33333em;
   margin: 0 0 0.44444em 0;
 }
 
-/* line 43, ../sass/bases/_typography.scss */
+/* line 45, ../sass/bases/_typography.scss */
 h6 {
   font-size: 1em;
   line-height: 1.5em;
   margin: 0 0 0.5em 0;
 }
 
-/* line 49, ../sass/bases/_typography.scss */
+/* line 51, ../sass/bases/_typography.scss */
 p, pre, label {
   font-size: 1em;
   line-height: 1.5em;
   margin: 0 0 1em 0;
 }
 
-/* line 55, ../sass/bases/_typography.scss */
+/* line 57, ../sass/bases/_typography.scss */
 ol, ul {
   font-size: 1em;
   line-height: 1.5em;
   margin: 0 0 2em 0;
 }
 
-/* line 60, ../sass/bases/_typography.scss */
+/* line 62, ../sass/bases/_typography.scss */
 li {
   margin: 0;
   padding: 0;
@@ -518,37 +520,37 @@ li {
 
 /* Core typography
 ------------------------------------------------------------ */
-/* line 68, ../sass/bases/_typography.scss */
+/* line 70, ../sass/bases/_typography.scss */
 ul {
   list-style-position: outside;
   list-style-type: disc;
 }
 
-/* line 69, ../sass/bases/_typography.scss */
+/* line 71, ../sass/bases/_typography.scss */
 ol {
   list-style-position: outside;
   list-style-type: decimal;
   padding: 0;
 }
 
-/* line 70, ../sass/bases/_typography.scss */
+/* line 72, ../sass/bases/_typography.scss */
 strong, b {
   font-weight: 600;
 }
 
-/* line 71, ../sass/bases/_typography.scss */
+/* line 73, ../sass/bases/_typography.scss */
 em, i, q {
   font-style: italic;
 }
 
-/* line 73, ../sass/bases/_typography.scss */
+/* line 75, ../sass/bases/_typography.scss */
 blockquote {
   padding-left: 1em;
   border-left: 0.3125em solid grey;
   line-height: normal;
   margin: 0;
 }
-/* line 78, ../sass/bases/_typography.scss */
+/* line 80, ../sass/bases/_typography.scss */
 blockquote p {
   font-style: italic;
   margin: 0;
@@ -585,35 +587,35 @@ html, body {
 body {
   font-size: 100%;
   background: #f7f7f7;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
-/* line 17, ../sass/layouts/_main.scss */
+/* line 18, ../sass/layouts/_main.scss */
 a {
   text-decoration: none;
 }
-/* line 19, ../sass/layouts/_main.scss */
+/* line 20, ../sass/layouts/_main.scss */
 a:hover {
   text-decoration: underline;
 }
 
 /* Selected Text Backgroun Color
 ------------------------------------------------------------ */
-/* line 32, ../sass/layouts/_main.scss */
+/* line 33, ../sass/layouts/_main.scss */
 ol {
   list-style-position: inside;
   list-style-type: decimal;
   padding: 0;
 }
 
-/* line 33, ../sass/layouts/_main.scss */
+/* line 34, ../sass/layouts/_main.scss */
 ul {
   list-style-position: inside;
   list-style-type: disc;
   padding: 0;
 }
 
-/* line 37, ../sass/layouts/_main.scss */
+/* line 36, ../sass/layouts/_main.scss */
 section[role="header"],
 section[role="main"],
 section[role="footer"] {
@@ -621,14 +623,37 @@ section[role="footer"] {
 }
 
 /*------------------------------------------------------------------------*\
+  Holder definitions
+\*------------------------------------------------------------------------*/
+/* line 47, ../sass/layouts/_main.scss */
+.inline {
+  display: inline;
+}
+
+/*------------------------------------------------------------------------*\
   Header definitions
 \*------------------------------------------------------------------------*/
-/* line 44, ../sass/layouts/_main.scss */
+/* line 54, ../sass/layouts/_main.scss */
 section[role="header"] {
   min-height: 120px;
 }
+/* line 58, ../sass/layouts/_main.scss */
+section[role="header"] nav ul li {
+  display: inline;
+  float: left;
+}
+/* line 61, ../sass/layouts/_main.scss */
+section[role="header"] nav ul li a {
+  padding: 10px;
+}
+/* line 63, ../sass/layouts/_main.scss */
+section[role="header"] nav ul li a:hover {
+  background: #0071bc;
+  color: white;
+  text-decoration: none;
+}
 
-/* line 47, ../sass/layouts/_main.scss */
+/* line 73, ../sass/layouts/_main.scss */
 .logo {
   background-image: url(/img/sprites/main.svg);
 }
@@ -644,7 +669,7 @@ section[role="header"] {
 \*------------------------------------------------------------------------*/
 /* Grid for Mobile First!
 ------------------------------------------------------------ */
-/* line 9, ../sass/layouts/_media-queries.scss */
+/* line 7, ../sass/layouts/_media-queries.scss */
 section[role='header'],
 section[role='main'],
 section[role='footer'] {
@@ -653,7 +678,7 @@ section[role='footer'] {
   width: 100%;
   margin: 0 auto;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.3/stylesheets/zen/_grids.scss */
+/* line 45, ../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.3/stylesheets/zen/_grids.scss */
 section[role='header']:before, section[role='header']:after,
 section[role='main']:before,
 section[role='main']:after,
@@ -662,7 +687,7 @@ section[role='footer']:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.3/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.3/stylesheets/zen/_grids.scss */
 section[role='header']:after,
 section[role='main']:after,
 section[role='footer']:after {
