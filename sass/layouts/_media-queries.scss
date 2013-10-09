@@ -1,0 +1,104 @@
+/*------------------------------------------------------------------------*\
+  Grid & Breakpoints definitions
+\*------------------------------------------------------------------------*/
+
+/* Grid for Mobile First!
+------------------------------------------------------------ */
+section[role='header'],
+section[role='main'],
+section[role='footer'] {
+  @include zen-grid-container;
+  $zen-column-count: 4;
+  $zen-gutter-width: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+$breakpoint-default-media: only screen;
+$breakpoint-to-ems: true;
+
+/* Smartphones
+------------------------------------------------------------ */
+$breakpoint-smartphones-ptt-lds: 320px 600px;
+$breakpoint-smartphones-lds: 321px;
+$breakpoint-smartphones-ptt: 320px;
+
+/* Tablets
+------------------------------------------------------------ */
+$breakpoint-tablets-ptt-lds: 768px 1024px;
+$breakpoint-tablets-lds: 768px 1024px, orientation landscape;
+$breakpoint-tablets-ptt: 768px 1024px, orientation portrait;
+
+/* Desktops
+------------------------------------------------------------ */
+$breakpoint-small-desktops: 1025px;
+$breakpoint-large-desktops: 1280px;
+$breakpoint-large-screens: 1824px;
+
+/* Retina, HiDPI screens
+------------------------------------------------------------ */
+//$breakpoint-retina: 1.5 device-pixel-ratio;
+
+/* Smartphones (portrait and landscape)
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-smartphones-ptt-lds) {
+  // Styles 
+}
+
+/* Smartphones (landscape)
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-smartphones-lds) {
+  // Styles 
+}
+
+/* Smartphones (portrait) 
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-smartphones-ptt) {
+  // Styles 
+}
+
+/* Tablets (portrait and landscape) 
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-tablets-ptt-lds) {
+  // Styles 
+}
+
+/* Tablets (landscape)
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-tablets-lds) {
+  // Styles 
+}
+/* Tablets (portrait)
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-tablets-ptt) {
+  // Styles 
+}
+
+/* Small desktops and laptops
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-small-desktops) {
+  // Styles 
+}
+
+/* Large desktops and laptops
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-large-desktops) {
+  // Styles 
+}
+
+/* Large screens
+------------------------------------------------------------ */
+@include breakpoint($breakpoint-large-screens) {
+  // Styles 
+}
+
+/* Retina, HiDPI screens
+------------------------------------------------------------ */
+@media (min--moz-device-pixel-ratio: 1.5),
+       (-o-min-device-pixel-ratio: 3/2),
+       (-webkit-min-device-pixel-ratio: 1.5),
+       (min-device-pixel-ratio: 1.5),
+       (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+        /* Styles */
+}

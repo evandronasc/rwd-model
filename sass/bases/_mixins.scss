@@ -1,0 +1,143 @@
+/*------------------------------------------------------------------------*\
+    Mixins with wonderful Placeholders (Sass 3.2++)!! Enjoy
+\*------------------------------------------------------------------------*/
+
+// Hide from both screenreaders and browsers
+// ------------------------------------------------------------
+%hidden { display: none !important; visibility: hidden; }
+
+// Hide visually and from screenreaders, but maintain layout
+// ------------------------------------------------------------
+%invisible { visibility: hidden; }
+
+// Image Replacement
+// ------------------------------------------------------------
+%image-replacement { font: 0/0 a; text-shadow: none; color: transparent; }
+
+// Hide only visually, but have it available for screenreaders
+// ------------------------------------------------------------
+%visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    &.focusable:active,
+    &.focusable:focus{
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+}
+
+// Clearfix
+// ------------------------------------------------------------
+%clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    *zoom: 1;
+}
+
+// Navigation Inline
+// ------------------------------------------------------------
+%navigation-list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        display:block;
+        float:left;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
+
+%navigation-list-vert {
+    @extend %navigation-list;
+    > li{
+        float: none;
+    }
+}
+
+/*------------------------------------------------------------------------*\
+	Mixins
+\*------------------------------------------------------------------------*/
+$fonts-path:  "../fonts/";
+
+/* @font-face bulletproof
+------------------------------------------------------------ */
+@mixin font-face($font-family, $fonts-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$fonts-path}.eot');
+      src: url('#{$fonts-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$fonts-path}.woff') format('woff'),
+           url('#{$fonts-path}.ttf') format('truetype'),
+           url('#{$fonts-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$fonts-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+/* Placeholder Input Styling
+------------------------------------------------------------ */
+@mixin placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}
+
+/* Mixins for list style types
+------------------------------------------------------------ */
+@mixin unordered {
+	 list-style-position: outside; 
+	 list-style-type: disc;
+}
+
+@mixin unordered-inside {
+	 list-style-position: inside; 
+	 list-style-type: disc;
+	 padding: 0;
+}
+
+@mixin ordered {
+	list-style-position: outside; 
+	list-style-type: decimal;
+	padding: 0;
+}
+
+@mixin ordered-inside {
+	list-style-position: inside; 
+	list-style-type: decimal;
+	padding: 0;
+}
+
+@mixin nobullet {
+	list-style-type: none;
+}
+
+%debug{
+    background: pink !important;
+}

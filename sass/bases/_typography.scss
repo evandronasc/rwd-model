@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------------*\
+	@Font-face definitions
+\*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*\
+	Fonts definitions
+\*------------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a{
+	font: inherit; font-size: 100%; vertical-align: baseline; 
+}
+
+// 3 lines below, based on font size
+h1 { 
+	@include adjust-font-size-to(36px); 
+	margin: 0 0 rhythm(3, 36px) 0;
+} 
+
+// 4 lines above / 2 lines below, based on font size			
+h2 { 
+	@include adjust-font-size-to(30px); 
+	margin: rhythm(3, 30px) 0 rhythm(2, 30px) 0;			 
+}
+
+// 4 lines above / 2 lines below, based on font size 
+h3 { 
+	@include adjust-font-size-to(22px); 
+	margin: rhythm(3, 22px) 0 rhythm(2, 22px) 0;  			
+} 
+
+// 1 lines below, based on font size
+h4 { 
+	@include adjust-font-size-to(20px); 
+	margin: 0 0 rhythm(2, 20px) 0;  						
+} 
+
+// 1 lines below, based on font size
+h5 { 
+	@include adjust-font-size-to(18px); 
+	margin: 0 0 rhythm(1, 18px) 0;  						 
+} 
+
+// 1 lines below, based on font size
+h6 { 
+	@include adjust-font-size-to(16px); 
+	margin: 0 0 rhythm(1, 16px) 0;  						 
+} 	
+
+// 2 lines below, based on font size
+p, pre, label { 
+	@include adjust-font-size-to(16px); 
+	margin: 0 0 rhythm(2, 16px) 0;							
+}
+
+// 4 lines below, based on font size
+ol, ul {
+	@include adjust-font-size-to(16px);
+	margin: 0 0 rhythm(4, 16px) 0;							
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	line-height: auto;
+}
+
+/* Core typography
+------------------------------------------------------------ */
+ul 			{ @include unordered; } 						// Include unordered list from mixins by default
+ol 			{ @include ordered;	}							// Include ordered list from mixins by default
+strong, b 	{ font-weight: 600; }
+em, i, q 	{ font-style: italic; }
+
+blockquote {
+	padding-left: em-font(16px);
+	border-left: em-font(5px) solid grey;
+	line-height: normal;
+	margin: 0;
+	p {
+		font-style: italic;
+		margin: 0;
+		@include adjust-font-size-to(20px); 
+		margin: rhythm(3, 20px) 0 rhythm(3, 20px) 0;
+	}
+}

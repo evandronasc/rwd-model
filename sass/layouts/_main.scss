@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------------*\
+  Base definitions
+\*------------------------------------------------------------------------*/
+
+/* Box Model
+------------------------------------------------------------ */
+* { @include box-sizing(border-box); }
+
+html, body { width: 100%; height: 100%; }
+
+body { 
+  font-size: 100%; 
+  background: $white-broken;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:hover{ text-decoration: underline; }
+}
+
+/* Selected Text Backgroun Color
+------------------------------------------------------------ */
+::selection {
+  // background: yourcolor; /* Safari */
+}
+
+::-moz-selection {
+  // background: yourcolor; /* Firefox */
+}
+
+ol { @include ordered-inside }
+ul { @include unordered-inside }
+
+section[role="header"],
+section[role="main"],
+section[role="footer"] {
+  max-width: em-font(1080px);
+}
+
+/*------------------------------------------------------------------------*\
+  Header definitions
+\*------------------------------------------------------------------------*/
+section[role="header"]{
+  min-height: 120px;
+}
+.logo{
+    background-image:url(/img/sprites/main.svg);
+}
+
+// Sprite for the win!
+.logo--bkg{
+    // width:64px;
+    // height:64px;
+    // background-position:-5px -5px;
+}
+
+/*------------------------------------------------------------------------*\
+  Main definitions
+\*------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------*\
+  Footer definitions
+\*------------------------------------------------------------------------*/
